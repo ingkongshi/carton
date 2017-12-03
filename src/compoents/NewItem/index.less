@@ -1,0 +1,32 @@
+.new-item{
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    a{
+        color:#000;
+    }
+    h3{
+        margin: 0;
+        font-weight: normal;
+        line-height: 1.25;
+        display:-webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:2; /*固定显示3行*/
+        overflow: hidden;
+    }
+    .imgList{
+        display: flex;
+        img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            flex-grow: 1;
+            height: 100px;
+            margin:10px 0;
+            &:nth-child(2){
+                border-left: 15px solid #fff;
+                border-right: 15px solid #fff;
+            }
+        }
+    }
+}
